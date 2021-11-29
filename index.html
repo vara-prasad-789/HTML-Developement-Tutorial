@@ -390,15 +390,15 @@ USING IMAGE AND MAP CODE :<br><br>
 The HTML <map> tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more <area> tags. </p><br><br>
 
 <code>
-<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+< img src="workplace.jpg" alt="Workplace" usemap="#workmap">
 
-<map name="workmap">
-  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
-  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
-  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
-</map></code> <br>
+< map name="workmap">
+  < area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  < area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  < area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</ map></code> <br>
 
-</p>
+</p><br>
 
 <h3>Background Images</h3>
 <p>To add a background image on an HTML element, use the HTML style attribute and the CSS background-image property<br><br>
@@ -419,7 +419,7 @@ If you want the background image to stretch to fit the entire element, you can s
 background-size: 100% 100%;<br><br>
 </p>
 
-
+<h3>Resize the Window</h3>
 <picture>
 	<source srcset="IMAGES/650px.jpg" media="(min-width:750px)">
 	<source srcset="IMAGES/400px.jpg" media="(min-width: 400px)">
@@ -435,13 +435,13 @@ An active link is underlined and red</p><br>
 
 <p>Collapsed Borders<br>
 To let the borders collapse into one border, add the CSS border-collapse property.<br>
-Cell padding specifies the space between the cell content and its borders.<br>
+Cell padding specifies the space between the cell content and its borders.<br><br>
 <h4>Left-align Headings</h4>
-By default, table headings are bold and centered.<br>
+By default, table headings are bold and centered.<br><br>
 <h4>Add Border Spacing</h4>
-Border spacing specifies the space between the cells.<br>
+Border spacing specifies the space between the cells.<br><br>
 </p>
-<h5>Note: If the table has collapsed borders, border-spacing has no effect.</h5>
+<h5>Note: If the table has collapsed borders, border-spacing has no effect.</h5><br>
 <table style="width:100%" id="t01">
 <tr>
 <th>Firstname</th>
@@ -463,7 +463,7 @@ Border spacing specifies the space between the cells.<br>
   <td>Doe</td>
   <td>80</td>
 </tr>
-</table>
+</table><br>
 <h4>Cell that Spans Many Columns</h4>
 <table style="width:100%">
 <colgroup>
@@ -480,7 +480,7 @@ Border spacing specifies the space between the cells.<br>
   <td style="text-align: right;">55577854</td>
   <td>55577855</td>
 </tr>
-</table>
+</table><br><br>
 
 <table style="width:100%">
 <caption><h3>Cell that Spans Many Rows</h3></caption>
@@ -498,7 +498,7 @@ Border spacing specifies the space between the cells.<br>
 <tr>
   <td>55577855</td>
 </tr>
-</table><br>
+</table><br><br>
 
 <table style="height:200px">
 <tr>
@@ -509,7 +509,7 @@ Border spacing specifies the space between the cells.<br>
   <td>January</td>
   <td style="vertical-align:top;">$100</td>
 </tr>
-</table>
+</table><br><br>
 
 <h4>Description Lists</h4>
 <p>The < dl> tag defines the description list, the < dt> tag defines the term (name), and the < dd> tag describes each term</p>
@@ -518,14 +518,15 @@ Border spacing specifies the space between the cells.<br>
 <dd>- black hot drink</dd>
 <dt>Milk</dt>
 <dd>- white cold drink</dd>
-</dl>
-
+</dl><br><br>
+<h4>UnOrdered Lists</h4>
 <ul style="width: 294px;" id="ulll">
 <li class="ww"><a href="#home">Home</a></li>
 <li class="ww"><a href="#news">News</a></li>
 <li class="ww"><a href="#contact">Contact</a></li>
 <li class="ww"><a href="#about">About</a></li>
-</ul>
+</ul><br><br>
+<h4>Ordered Lists</h4>
 <ol type="1"class="ol">
 <li>Coffee</li>
 <li>Tea</li>
@@ -560,7 +561,7 @@ Border spacing specifies the space between the cells.<br>
 <li>Coffee</li>
 <li>Tea</li>
 <li>Milk</li>
-</ol>
+</ol><br><br>
 
 <h4>Block Level Elements</h4>
 <p>A block-level element always starts on a new line.<br>
@@ -569,12 +570,12 @@ A block-level element always takes up the full width available (stretches out to
 
 A block level element has a top and a bottom margin, whereas an inline element does not.<br>
 <br>
-<img src="blocklevel.jpg" height="165px"></p>
+<img src="blocklevel.jpg" height="165px"></p><br>
 <h4>Inline Elements</h4>
 <p>An inline element does not start on a new line.<br>
 
 An inline element only takes up as much width as necessary.<br><br>
-<img src="inlinelevel.jpg" height="190px"></p>
+<img src="inlinelevel.jpg" height="190px"></p><br><hr>
 
 <h4>The < div> Element</h4>
 <p>The < div> element is often used as a container for other HTML elements.<br>
@@ -583,7 +584,7 @@ The < div> element has no required attributes, but style, class and id are commo
 <div style="background-color: black; color: white; padding: 10px;">
 <p style="font-size: 25px; font-weight: 900; ">London</p>
 <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-</div>
+</div><br><hr>
 
 <p style="font-size: 20px; font-weight: bolder;">The < span> Element</p>
 <p>The < span> element is an inline container used to mark up a part of a text, or a part of a document.
@@ -592,13 +593,13 @@ The < span> element has no required attributes, but style, class and id are comm
 <br><br>
 
 My mother has <span style="color:blue;font-weight:bold">black</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold">dark green</span> eyes.</p>
-<br>
+<br><hr>
 
 <p>To define multiple classes, separate the class names with a space, e.g. < div class="city main">. The element will be styled according to all the classes specified.</p>
 <h2 class="city main">London</h2>
 <h2 class="city">Paris</h2>
 <h2 class="city">Tokyo</h2>
-<p>Different Elements Can Share Same Class</p><br>
+<p>Different Elements Can Share Same Class</p><br><hr>
 
 <p style="font-weight: bold;">Use of The class Attribute in JavaScript</p>
 <p>The class name can also be used by JavaScript to perform certain tasks for specific elements.<br>
@@ -615,13 +616,23 @@ JavaScript can access elements with a specific class name with the getElementsBy
 
 <h2 class="city1">Tokyo</h2>
 <p>Tokyo is the capital of Japan.</p>
+<br><br>
+<h4>iframe Tag</h4>
+<p>An HTML iframe is used to display a web page within a web page.</p>
+<ul>
+<li>The HTML < iframe> tag specifies an inline frame</li>
+<li>The src attribute defines the URL of the page to embed</li>
+<li>Always include a title attribute (for screen readers)</li>
+<li>The height and width attributes specifies the size of the iframe</li>
+<li>Use border:none; to remove the border around the iframe</li>
+</ul>
+<iframe src="https://www.w3schools.com/index.html" title="W3Schools"></iframe><hr><br>
 
-<iframe src="https://www.w3schools.com/index.html" title="W3Schools"></iframe>
-
+<p>The text size can be set with a "vw" unit, which means the "viewport width".</p>
 <h1 style="font-size: 9vw;">Responsive Text</h1>
 <p style="font-size: 6vw;">Resize the browser window to see how the text size scales.</p>
 <p style="font-size: 4vw;">Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport width.</p>
-<p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</p>
+<p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</p><br><br>
 
 <h2>HTML Computer Code Elements</h2>
 <p>Some programming code:</p>
@@ -629,15 +640,15 @@ JavaScript can access elements with a specific class name with the getElementsBy
 x = 5;
 y = 6;
 z = x + y;
-</code>
-<p style="font-weight: bold;">kbd Element</p>
-<p>The HTML < kbd> element is used to define keyboard input. The content inside is displayed in the browser's default monospace font.</p>
+</code><br>
+<p style="font-weight: bold;">kbd Element</p><br>
+<p>The HTML < kbd> element is used to define keyboard input. The content inside is displayed in the browser's default monospace font.</p><br>
 
-<p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+<p>Save the document by pressing <kbd>Ctrl + S</kbd></p><br><br>
 <p style="font-weight: bold;">samp for Program output</p>
 <p>The HTML < samp> element is used to define sample output from a computer program. The content inside is displayed in the browser's default monospace font.</p>
 
-<p><samp>File not found.<br>Press F1 to continue</samp></p>
+<p><samp>File not found.<br>Press F1 to continue</samp></p><br><br>
 
 <pre>
 <code>
@@ -646,38 +657,46 @@ y = 6;
 z = x + y;
 </code>
 </pre>
-
+<br>
 <p style="font-weight: bold;">var Element</p>
 <p>The HTML < var> element  is used to define a variable in programming or in a mathematical expression. The content inside is typically displayed in<mark> Italic </mark>.</p>
 
 <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
-
-<details>
+<br><br>
+<h3>details Tag </h3>
+<p>The < details> tag specifies additional details that the user can open and close on demand.
+<br>
+The < details> tag is often used to create an interactive widget that the user can open and close. By default, the widget is closed. When open, it expands, and displays the content within.
+<br>
+Any sort of content can be put inside the < details> tag. 
+<br><br>
+Tip: The < summary> tag is used in conjuction with <details> to specify a visible heading for the details.
+< details></p>
 <summary>Epcot Center</summary>
 <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
-</details>
+</details><br><br>
 
 <h3>The Time Element</h3>
-<p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+<p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p><br><br>
 
 <img src="semanticelements.jpg" height="520px">
-
+<hr>
 <p>A commonly used entity in HTML is the non-breaking space: & nbsp;</p>
-<p>H&nbsp;I</p>
-<p>Hypen&#8209;</p>
-<p>less than &lt; &#60;</p>
-<p>Greater than &gt; &#62;</p>
-<p>Ampersand &amp; &#38;</p>
-<p>double quotation mark &quot; &#34;</p>
-<p>single quotation mark(apostrophe) &apos; &#39;</p>
-<p>Cent &cent; &#162;<br>
-Pound &pound; &#163;<br>
-Yen &yen; &#165;<br>
-Euro &euro; &#8364;<br>
-Copyright &copy; &#169;<br>
-registered trademark &reg; &#174;<br>
-Trademark &trade; &#8482;<br>
-</p>
+<p>H&nbsp;&nbsp;I</p>
+<p>Hypen&nbsp;&#8209;</p>
+<p>less than &nbsp;&lt; &#60;</p>
+<p>Greater than &nbsp;&gt; &#62;</p>
+<p>Ampersand &nbsp;&amp; &#38;</p>
+<p>double quotation mark &nbsp;&quot; &#34;</p>
+<p>single quotation mark(apostrophe) &nbsp;&apos; &#39;</p>
+<p>Cent &nbsp;&cent; &#162;<br>
+Pound &nbsp;&pound; &#163;<br>
+Yen &nbsp;&yen; &#165;<br>
+Euro &nbsp;&euro; &#8364;<br>
+Copyright &nbsp;&copy; &#169;<br>
+registered trademark &nbsp;&reg; &#174;<br>
+Trademark &nbsp;&trade; &#8482;<br>
+</p><hr>
 <p style="font-weight: bold;">Combining Diacritical Marks</p>
 <p>A diacritical mark is a "glyph" added to a letter.<br>
 
@@ -685,7 +704,7 @@ Some diacritical marks, like grave (  ̀) and acute (  ́) are called accents.<b
 
 Diacritical marks can appear both above and below a letter, inside a letter, and between two letters.</p>
 <p>a&#768; a&#769; a&#770; a&#771; O&#768; O&#769; O&#770; O&#771;
-</p>
+</p><hr>
 <p style="font-weight: bold;">Mathematical Symbols</p>
 <p>&#8704; &#8209; FOR ALL<br>
 &#8706;  &#8209; Partial Differential<br>
@@ -700,7 +719,7 @@ Diacritical marks can appear both above and below a letter, inside a letter, and
 </p><br>
 <button>
 <a href="https://www.w3schools.com/charsets/ref_utf_math.asp" class="link">More Mathematical Symbols</a></button><br><br>
-
+<hr>
 <p style="font-weight: bold;">Emojis</p>
 <p>&#8986; WATCH<br>
 &#8987; Loading<br>
@@ -741,14 +760,14 @@ Diacritical marks can appear both above and below a letter, inside a letter, and
 &#9757;&#127996; Medium Light<br>
 &#9757;&#127995; Light</p><br>
 
-<button>
+<button><hr>
 <a href="https://www.w3schools.com/charsets/ref_html_entities_4.asp" class="link">HTML 4 ENTITY REFERENCE</a></button>
 
 <p style="font-weight: bold;">Character Set ASCII<br>
 	0 - 9 = 48 - 57<br>
 	A - Z = 65 - 90<br>
 	a - z = 97 - 122 
-</p>
+</p><hr
 
 <h1>Forms</h1>
 <fieldset style="width: 30%;">
@@ -784,10 +803,10 @@ Diacritical marks can appear both above and below a letter, inside a letter, and
 
 <form>
 	<input type="submit" name="submit">
-</form></fieldset>
+</form></fieldset><br><br>
 <p>The < label> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element.
 <br>
-The < label> element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the < label> element, it toggles the radio button/checkbox.</p>
+The < label> element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the < label> element, it toggles the radio button/checkbox.</p><br>
 <p>
 Action Attribute<br>
 The action attribute defines the action to be performed when the form is submitted.
@@ -839,6 +858,7 @@ When autocomplete is on, the browser automatically complete values based on valu
 <p>The accept-charset attribute specifies the character encodings that are to be used for the form submission.</p>
 <p>< form action="/action_page.php" accept-charset="utf-8"></p>
 <hr>
+<h4>select tag</h4>
 <p>The < select> element defines a drop-down list</p>
 <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
 <label for="cars">Choose a car:</label>
