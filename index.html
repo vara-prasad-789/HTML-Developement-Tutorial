@@ -871,11 +871,19 @@ When autocomplete is on, the browser automatically complete values based on valu
   <option value="fiat">Fiat</option>
   <option value="audi">Audi</option>
 </select>
+<hr><br>
+<h4>textarea Tag</h4>
+<p>The < textarea> tag defines a multi-line text input control.
+
+The < textarea> element is often used in a form, to collect user inputs like comments or reviews.</p>
+<p>The size of a text area is specified by the < cols> and < rows> attributes (or with CSS).
 <br>
+The name attribute is needed to reference the form data after the form is submitted</p>
 <textarea name="Comment1" rows="6" cols="30">
   Enter Your Comments 
 </textarea>
-<br>
+<hr><br>
+
 <p>The < datalist> element specifies a list of pre-defined options for an < input> element.<br>
 
 Users will see a drop-down list of the pre-defined options as they input data.<br>
@@ -890,51 +898,61 @@ The input list attribute refers to a < datalist> element that contains pre-defin
     <option value="Opera">
     <option value="Safari">
 </datalist>
+<br>
+<h4>Submit tag</h4>
 <input type="submit" name="submit"><br><br>
+<h4>input range type</h4>
 <input type="range" id="a" name="a" value="0">100+ <br>
+<h4>input number type</h4>
 <input type="number" name="b" id="b" value="50">=
 <output name="x" for="a b"></output><br>
+<p>Code written fro output tag</p>
+<code> < form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  < input type="range" id="a" value="50">
+  +< input type="number" id="b" value="25">
+  =< output name="x" for="a b"></ output>
+</ form> </code><hr>
 <p>Input Types</p>
-<p>COlor Input :</p><input type="color" name="favcolor"><br>
-<p>Button INput :</p><input type="button" name="submit" value="submit"><br>
-<p>Date Input :</p><input type="date" name="date"><br>
-<p>Datetime Local input :</p><input type="datetime-local" name="datetime"><br>
-<p>Email Input :</p><input type="email" name="email"><br>
-<p>File Input or Upload :</p><input type="file" name="file"><p>to upload multiple files use multiple</p><br>
-<input type="submit" name="upload"><br>
-<p>Hidden Input :</p>
-<input type="hidden" name="custid" value="3486"><br>
-<p>Image Input :</p><input type="image" src="img_submit.gif" name="submit"><br>
-<p>Month Input :</p><input type="month" name="datemonth"><br>
-<p>Number Input :</p><input type="number" name="number"><br>
-<p>Password :</p><input type="password" name="password"><br>
-<p>RAdio Input :</p><input type="radio" name="radio"><br>
-<p>Range Input :</p><input type="range" name="points" min="0" max="1000"><br>
-<p>Reset Input : </p><input type="reset" name="reset"><br>
-<p>Search Input :</p><input type="search" name="search"><br>
-<p>Telephone Input :</p><input type="tel" name="Telephone" pattern="+91-[0-9]{5}-[0-9]{5}" placeholder="+91-12345-12345"><br>
-<p>Text Input :</p><input type="text" name="text"><br>
-<p>Time Input :</p><input type="time" name="time"><br>
-<p>URL input :</p><input type="url" name="url"><br>
-<p>Week Input :</p><input type="week" name="week"><br>
-<p>Checkbox Input</p><input type="checkbox" name="a">
+<p>Color Input :</p><input type="color" name="favcolor"><br><br>
+<p>Button Input :</p><input type="button" name="submit" value="submit"><br><br>
+<p>Date Input :</p><input type="date" name="date"><br><br>
+<p>Datetime Local input :</p><input type="datetime-local" name="datetime"><br><br>
+<p>Email Input :</p><input type="email" name="email"><br><br>
+<p>File Input or Upload :</p><input type="file" name="file"><p>to upload multiple files use multiple</p><br><br>
+<input type="submit" name="upload"><br><br>
+<p>Hidden Input :</p><br>
+<input type="hidden" name="custid" value="3486"><br><br>
+<p>Image Input :</p><input type="image" src="img_submit.gif" name="submit"><br><br>
+<p>Month Input :</p><input type="month" name="datemonth"><br><br>
+<p>Number Input :</p><input type="number" name="number"><br><br>
+<p>Password :</p><input type="password" name="password"><br><br>
+<p>RAdio Input :</p><input type="radio" name="radio"><br><br>
+<p>Range Input :</p><input type="range" name="points" min="0" max="1000"><br><br>
+<p>Reset Input : </p><input type="reset" name="reset"><br><br>
+<p>Search Input :</p><input type="search" name="search"><br><br>
+<p>Telephone Input :</p><input type="tel" name="Telephone" pattern="+91-[0-9]{5}-[0-9]{5}" placeholder="+91-12345-12345"><br><br>
+<p>Text Input :</p><input type="text" name="text"><br><br>
+<p>Time Input :</p><input type="time" name="time"><br><br>
+<p>URL input :</p><input type="url" name="url"><br><br>
+<p>Week Input :</p><input type="week" name="week"><br><br>
+<p>Checkbox Input</p><input type="checkbox" name="a"><br>
 </form>
-
+<hr><br>
 <p style="font-weight: bold;">INPUT ATTRIBUTES</p>
 <p>The input value attribute specifies an initial value for an input field:</p>
 <label>First Name :</label><input type="text" name="fname" value="john"><br>
 <p>The input readonly attribute specifies that an input field is read-only.
-<br>
+<br><br>
 A read-only input field cannot be modified</p>
 <label>Last name :</label><input type="text" name="lname" value="Doe" readonly="readonly">
 <p>The input disabled attribute specifies that an input field should be disabled.
-<br>
+<br><br>
 A disabled input field is unusable and un-clickable.<br>The value of a disabled input field will not be sent when submitting the form!</p>
-<label>AGE : </label><input type="text" name="age" value="24" disabled="disabled">
+<label>AGE : </label><input type="text" name="age" value="24" disabled="disabled"><br>
 <p>The input size attribute specifies the visible width, in characters, of an input field.<br>The default value for size is 20.</p>
-<label>Roll No : </label><input type="text" name="rollno" size="12">
+<label>Roll No : </label><input type="text" name="rollno" size="12"><br>
 <p>The input maxlength attribute specifies the maximum number of characters allowed in an input field.</p>
-<label>Password(6 letters) : </label><input type="password" name="password" maxlength="6">
+<label>Password(6 letters) : </label><input type="password" name="password" maxlength="6"><br>
 
 <p>The input min and max attributes specify the minimum and maximum values for an input field.<br>
 The min and max attributes work with the following input types: number, range, date, datetime-local, month, time and week.</p>
@@ -946,12 +964,12 @@ The min and max attributes work with the following input types: number, range, d
 
 <label for="quantity">Quantity (between 1 and 5):</label>
 <input type="number" id="quantity" name="quantity" min="1" max="5"><br><br>
-
+<hr>
 <p>The input multiple attribute specifies that the user is allowed to enter more than one value in an input field.
 <br>
 The multiple attribute works with the following input types: email, and file.</p>
 <label for="files">Select files:</label>
-<input type="file" id="files" name="files" multiple="multiple">
+<input type="file" id="files" name="files" multiple="multiple"><br><br>
 
 <p>The input pattern attribute specifies a regular expression that the input field's value is checked against, when the form is submitted.
 <br>
@@ -961,20 +979,20 @@ The pattern attribute works with the following input types: text, date, search, 
 <input type="submit" value="Submit">
 <p>The input placeholder attribute specifies a short hint that describes the expected value of an input field.<br>The placeholder attribute works with the following input types: text, search, url, tel, email, and password.</p>
 <br>
-<p>The input required attribute specifies that an input field must be filled out before submitting the form.<br>The input required attribute specifies that an input field must be filled out before submitting the form.</p>
+<p>The input required attribute specifies that an input field must be filled out before submitting the form.</p>
 <label>Username : </label><input type="text" name="username" required="required">
-
+<br>
 <p>The input step attribute specifies the legal number intervals for an input field.<br>This attribute can be used together with the max and min attributes to create a range of legal values.
 <br>
 The step attribute works with the following input types: number, range, date, datetime-local, month, time and week.</p>
 <label>Points :</label><input type="number" name="points" step="10">
-
+<br>
 <p>The input autofocus attribute specifies that an input field should automatically get focus when the page loads.</p>
 <label>First name : </label><input type="text" name="fname" autofocus="autofocus">
-
+<br>
 <p>The input height and width attributes specify the height and width of an < input type="image"> element.</p>
 <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
-
+<br>
 <p>The form attribute specifies the form an input element belongs to.</p>
 <form action="/action_page.php" id="form1">
   <label for="fname">First name:</label>
@@ -1060,8 +1078,14 @@ SVG is a W3C recommendation</p>
   <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
   Sorry, your browser does not support inline SVG.
 </svg><br>
-<a href="https://www.w3schools.com/graphics/svg_intro.asp">SVG Tutorial</a>
+<a href="https://www.w3schools.com/graphics/svg_intro.asp">SVG Tutorial Link</a>
 <hr>
+<h4>Video Tag</h4>
+<p>The < video> tag is used to embed video content in a document, such as a movie clip or other video streams.
+<br>
+The < video> tag contains one or more < source> tags with different video sources. The browser will choose the first source it supports.
+<br>
+The text between the < video> and </ video> tags will only be displayed in browsers that do not support the < video> element.</p>
 <div style="text-align:center"> 
   <button onclick="playPause()">Play/Pause</button> 
   <button onclick="makeBig()">Big</button>
@@ -1072,11 +1096,19 @@ SVG is a W3C recommendation</p>
   <source src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
 </video>
 </div><hr>
+<h4>Audio Tag </h4>
+<p>The < audio> tag is used to embed sound content in a document, such as music or other audio streams.
+<br>
+The < audio> tag contains one or more < source> tags with different audio sources. The browser will choose the first source it supports.
+<br>
+The text between the < audio> and </ audio> tags will only be displayed in browsers that do not support the < audio> element.</p>
 <audio controls autoplay muted>
   <source src="audio.mp3" type="audio/mp3">
 Your browser does not support the audio element.
 </audio><hr>
+<h4>Inserting youtube video</h4>
 <iframe src="https://www.youtube.com/embed/668nUCeBHyY?autoplay=0&mute=1&loop=1&controls=1" width="750" height="500" ></iframe><hr>
+<h4>Base Tag</h4>
 <p>The < base> tag specifies the base URL and/or target for all relative URLs in a document.<br>
 
 The < base> tag must have either an href or a target attribute present, or both.
